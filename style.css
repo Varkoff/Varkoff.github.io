@@ -11,3 +11,33 @@ section div {
 body {
     background-color: #FFBA49;
 }
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none;
+}
+
+video {
+    margin: auto;
+    position: relative;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: 1114px;
+}
