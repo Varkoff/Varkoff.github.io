@@ -1,0 +1,13 @@
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section div {
+    background-color: #9D2503;
+    color: #f1f1b0;
+}
+
+body {
+    background-color: #FFBA49;
+}
