@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
-h1 {
+h1,
+h3 {
     font-family: 'Alfa Slab One', cursive;
 }
 
@@ -45,4 +46,12 @@ video {
     opacity: 1;
     width: auto;
     height: 1114px;
+}
+
+
+/* FILMOGRAPHIE */
+
+.timeline {
+    padding: 30px 10px;
+    position: relative;
 }
