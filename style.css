@@ -7,6 +7,17 @@ h4 {
     font-family: 'Alfa Slab One', cursive;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+section {
+    width: 100%;
+    margin: 50px auto;
+}
+
 section div {
     /* background-color: #9d2503; */
     color: #f1f1b0;
@@ -79,6 +90,11 @@ video {
     bottom: -42px;
 }
 
+.carousel-inner,
+p {
+    text-align: center;
+}
+
 .img1 {
     float: left;
 }
@@ -120,6 +136,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 25px;
 }
 
 .caroussel {
