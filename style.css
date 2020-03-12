@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+h1,
+h3 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
 section {
     width: 100%;
     margin: 0 auto;
@@ -40,4 +47,55 @@ video {
     opacity: 1;
     width: auto;
     height: 1114px;
+}
+
+
+/* FUN */
+
+#fact {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 500;
+    height: 50px;
+    user-select: none;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+    overflow-wrap: break-word;
+    text-shadow: 2px 2px 4px black;
+    padding: 0px;
+}
+
+#factContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    padding: 20px;
+}
+
+#factContainerContainer {
+    background-image: url(https://i.imgur.com/PAxoiA0.jpg?1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 70%;
+    border-radius: 80px;
+    padding: 0px;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+}
+
+#fact:hover {
+    cursor: pointer;
+}
+
+
+/* FIN FUN */
+
+
+/* FILMOGRAPHIE */
+
+.timeline {
+    padding: 30px 10px;
+    position: relative;
 }
