@@ -369,7 +369,9 @@ h4 {
 }
 
 .interline {
-    border: 3px solid #000
+    border: 3px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #fact {
@@ -406,7 +408,8 @@ h4 {
 
 h2 {
     text-align: center;
-    margin-top: 30px
+    margin-top: 30px;
+    text-transform: uppercase;
 }
 
 .main-timeline {
