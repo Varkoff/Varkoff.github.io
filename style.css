@@ -306,7 +306,7 @@ h4 {
 
 .carousel-control-next {
     right: -91px;
-    left: auto
+    left: auto;
 }
 
 .carouselExampleIndicators {
@@ -315,31 +315,23 @@ h4 {
 
 .carousel-control-prev {
     left: -91px;
-    right: auto
+    right: auto;
 }
 
 .carousel-indicators {
     bottom: -42px
 }
 
-.img1 {
-    float: left
-}
-
-.img2 {
-    float: right
-}
-
-.img3 {
-    float: left
-}
+.img1,
+.img2,
+.img3 {}
 
 .buttonleft,
 .buttonright {
     color: #9d2503;
     font-size: 40px;
     font-weight: 700;
-    text-align: left
+    text-align: left;
 }
 
 .buttonright {
@@ -360,7 +352,7 @@ h4 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }
 
 .caroussel {
@@ -1028,13 +1020,6 @@ h2 {
     .main-timeline4 .inner-content {
         padding: 10px
     }
-}
-
-.divider {
-    width: 500px;
-    height: 2px;
-    background: green;
-    margin: 0 auto
 }
 
 .heading {
