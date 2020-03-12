@@ -1,236 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+<script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Hello, world!</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#Home">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="#Home">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#bio">Biographie <span class="sr-only">(current)</span></a>
-                </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#bio"
+              >Biographie <span class="sr-only">(current)</span></a
+            >
+          </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#filmo">Filmographie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#fun">Fun</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#filmo">Filmographie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fun">Fun</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <section id="home">
-        <section>
-            <div class="hero-video">
-                <video autoplay="" muted="">
-            <source src="chucknorris.mp4" type="video/mp4">
-            </video></div>
-        </section>
-        <div class="container-sm">Moi</div>
+      <section>
+        <div class="hero-video">
+          <video autoplay="" muted="">
+            <source src="chucknorris.mp4" type="video/mp4" />
+            <!-- <source src="/wp-content/themes/chuck-norris/videos/chucknorris.webm" type="video/webm"><source src="/wp-content/themes/chuck-norris/videos/chucknorris.ogv" type="video/ogg"> -->
+          </video>
+        </div>
+      </section>
+      <div class="container-sm">Moi</div>
     </section>
     <section id="bio">
-        <div class="container-sm">
-            <div class="biotitle">
-                <h2>Biographie</h2>
-            </div>
-        </div> 
-            
-        <div class="container-sm">
-            <div class="container-bio">
-                <div class="button-left">
-                    <p type="button" class="buttonleft" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="sr-only">Previous</span><</p>
-                </div>
-                <div class="carousel">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/giphy.gif" class="img1" alt="youngchuck">
-                                <p>Né de parents de souche indienne et irlandaise, de mon vrai nom Carlos Ray Norris, j'apprends le karaté pendant mon service militaire dans l'US Force en Corée du Sud. A mon retour aux Etats-Unis, j'ouvre une école de karaté qui devient fréquentée par de nombreuses célébrités, dont Steve McQueen. C'est cet art martial et les nombreux prix que j'ai remporté grâce à lui qui occasionnent ma rencontre avec Bruce Lee, qui m'offre mon premier rôle au cinéma dans son film La Fureur du dragon en 1972. Le film est un succès et reste, encore aujourd'hui, un classique du genre. Il est du reste celui qui met en scène le seul combat où je perds... Il ouvre la voie à ma carrière d'acteur, bien que tardive. </p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/tenor.gif" class="img2" alt="texasranger">
-                                <p>S'ensuivent ensuite plusieurs premiers rôles dans des films d'action ou d'arts martiaux, où mes rôles se cantonnent bien souvent à celui du flic musclé décidé à faire respecter la loi. Mais le succès ne vient vraiment qu'avec Portés disparus, qui donne naissance à une trilogie (suivent Portés disparus II en 1985 et Portés disparus III en 1988, ce dernier étant réalisé par mon frère Aaron Norris en hommage à notre petit frère, mort au Viêtnam en 1970). En 1993 débute mon plus grand succès,la série Walker Texas Ranger de Christopher Canaan, dans laquelle j'y interprete le role de Cordell Walker (un Ranger texan). J'ai scénarisé quelques épisodes et j'ai prêté ma voix à la bande son originale de la serie. C'est après neuf saison que l'aventure s'est arrêtée en 2001. La serie reste cependant encore diffusée dans de nombreux pays et son succès m'a même value le titre honorifique de "Texas Rangers"</p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/gifchuck.gif" class="img3" alt="gifchuck">
-                                <p>Côté vie privée, j'ai été marié à Dianne Holechek (1958–1989), avec laquelle j'ai eu deux fils; Mike et Eric. J'ai également une fille, Dianna DeCioli, née en 1964 d’une relation extra conjugale. En 1998, j'épouse en secondes noces Gena O’Kelly avec laquelle j'ai eu des jumeaux; un garçon (Dakota Alan) et une fille (Danilee Kelly), en août 2001.En 2017, je prends officiellement ma retraite pour rester au chevet de ma femme. Néanmoins, après plusieurs années loins des écrans, je reprends du service à la télévision à l'occasion du dernier épisode de la série Hawaii 5-0.</p>
-                                <p>Durant ma carrière, je suis devenus malgré moi un meme sur internet. Les "<b><a href="#fun">Chuck Norris Facts</a></b>" m'attribuent des qualités surhumaines, caricaturant les héros que j'ai interprété au cinéma et à la télévision.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-                <div class="button-right">
-                    <p type="button" class="buttonright" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="sr-only">Next</span>></p>
-                </div> 
-            </div>    
-        </div>
-            
-    <section>
-        <div class="container-sm">
-            <div class="interline"></div>
-        </div>
-    </section>
-
+      <div class="container-sm">Biographie</div>
     </section>
 
     <section id="filmo">
-        <div class="container-sm">Filmographie</div>
+      <div class="container">
+        <div class="divider"></div>
+        <h2>FILMOGRAPHIE</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-timeline4">
+              <div class="timeline">
+                <a href="#" class="timeline-content">
+                  <span class="year">2012</span>
+                  <div class="inner-content">
+                    <h3 class="title">EXPENDABLES 2: UNITÉ SPÉCIALE</h3>
+                    <p class="description">
+                      Les Expendables sont de retour, et cette fois, la mission
+                      les touche de très près... Lorsque Mr. Church engage
+                      Barney Ross, Lee Christmas, Yin Yang, Gunnar Jensen, Toll
+                      Road et Hale Caesar – et deux nouveaux, Billy The Kid et
+                      Maggie – l’opération semble facile. Mais quand l’un
+                      d’entre eux est tué, les Expendables jurent de le venger.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="timeline">
+                <a href="#" class="timeline-content">
+                  <span class="year">1998</span>
+                  <div class="inner-content">
+                    <h3 class="title">LA COLÈRE DU TUEUR</h3>
+                    <p class="description">
+                      Le jeune Logan Fallon est témoin de l'assassinat des
+                      siens. Orphelin, il va passer son adolescence aux côtés de
+                      son oncle Jake qui, en le recueillant, va lui apprendre
+                      toute sa science des arts martiaux. Devenu adulte, Logan
+                      se fait passer pour un tueur à gages à Chicago avec une
+                      seule et unique ambition : approcher celui qui bouleversa
+                      son existence en ôtant la vie des membres de sa famille...
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="timeline">
+                <a href="#" class="timeline-content">
+                  <span class="year">1993</span>
+                  <div class="inner-content">
+                    <h3 class="title">WALKER TEXAS RANGER</h3>
+                    <p class="description">
+                      Cordell Walker est un Ranger texan qui fait régner la loi.
+                      Il a la sagesse du natif américain qui l'a élevé, et sa
+                      maîtrise des arts martiaux lui permet d'avoir le dessus
+                      dans les combats.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="timeline">
+                <a href="#" class="timeline-content">
+                  <span class="year">1984</span>
+                  <div class="inner-content">
+                    <h3 class="title">PORTÉS DISPARUS I II III</h3>
+                    <p class="description">
+                      Convaincu que des soldats portés disparus sont toujours
+                      prisonniers, le Colonel Braddock retourne au Vietnam pour
+                      vérifier ses présomptions.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="timeline">
+                <a href="#" class="timeline-content">
+                  <span class="year">1972</span>
+                  <div class="inner-content">
+                    <h3 class="title">LA FUREUR DU DRAGON</h3>
+                    <p class="description">
+                      Un aubergiste, propriétaire d'un restaurant chinois est
+                      assailli par un promoteur qui veut l'obliger à vendre son
+                      établissement. En désespoir de cause, l'aubergiste demande
+                      l'aide de Tang Lung alias "Dragon".
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="fun">
-        <div class="container-sm">
-            <h1>Fun!</h1>
-            <div id="factContainerContainer">
-                <div id="factContainer">
-                    <p id="fact" onclick="changeFact();">Quand Google ne trouve pas quelque chose, il demande à Chuck Norris. </p>
-                </div>
-
-            </div>
-
-
-        </div>
-
+      <div class="container-sm">
+        <h1>Fun!</h1>
+        <p>Chuck Norris ne se mouille pas, c'est l'eau qui se Chuck Norris.</p>
+        <p>Jesus Christ est né en 1940 avant Chuck Norris.</p>
+        <p>
+          Quand Google ne trouve pas quelque chose, il demande à Chuck Norris.
+        </p>
+        <p>Chuck Norris peut supprimer la corbeille.</p>
+        <p>
+          Chuck Norris ne vit pas sur Terre, la Terre vit sous Chuck Norris.
+        </p>
+        <p>
+          Quand un moustique pique Chuck Norris, c'est le moustique qui se
+          gratte.
+        </p>
+        <p>Chuck Norris a déjà compté jusqu'à l'infini. Deux fois.</p>
+        <p>Si Chuck Norris attaque l'Empire, l'Empire ne contre attaque pas.</p>
+        <p>Chuck Norris a fini son forfait illimité.</p>
+        <p>
+          Un film de Bruce Lee montre Chuck Norris se faire battre par Bruce
+          Lee. C'est là l'effet spécial le plus cher de toute l'histoire du
+          cinéma.
+        </p>
+      </div>
     </section>
     <section id="contact">
-        <div class="container-sm">Formulaire de contact
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-            </form>
-        </div>
-    </section>
+      <div class="container-sm">
 
+    <!--FORMULAIRE LUSIDAVE-->
     
+    <div class="container">
+      <div class="divider"></div>
+      <div class="heading">
+        <h2>Contactez-moi</h2>
+      </div>
+      
+      <div class="row col_sm-12">
+        <div>
+          <form id="contact-form" method="post" action="" role="form">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="firstname"
+                  >Prénom<span class="blue"> *</span></label
+                >
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  class="form-control"
+                  placeholder="Votre prénom"
+                />
+                <p class="comments">
+                  Tu crois pouvoir te moquer de Chuck Norris !? ;-)
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <label for="name">Nom<span class="blue"> *</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Votre nom"
+                />
+                <p class="comments">
+                  Tu crois pouvoir te moquer de Chuck Norris !? ;-)
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email">Email<span class="blue"> *</span></label>
+                <input
+                  type="text"
+                  id="email"
+                  name="name"
+                  class="form-control"
+                  placeholder="Votre email"
+                />
+                <p class="comments">
+                  Tu crois pouvoir te moquer de Chuck Norris !? ;-)
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <label for="phone">Téléphone</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Votre téléphone"
+                />
+              
+              </div>
+
+              <div class="col-md-12">
+                <label for="name">Message<span class="blue"> *</span></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Votre message"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+                <p class="comments">
+                  Tu crois pouvoir te moquer de Chuck Norris !? ;-)
+                </p>
+              </div>
+
+              <div class="col-md-12">
+                <p class="blue">
+                  <strong>* Ces informations sont requises</strong>
+                </p>
+              </div>
+
+              <div class="col-md-12">
+                <input type="submit" class="button1" value="Envoyer" />
+              </div>
+            </div>
+
+            <p class="thank-you">
+              Ton message a bien été envoyé. Merci d'avoir contacté Chuck Norris
+              :)
+            </p>
+          </form>
+        </div>
+      
+    </div>
+  </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase">Footer Content</h5>
+            <p>
+              Here you can use rows and columns to organize your footer content.
+            </p>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+          <hr class="clearfix w-100 d-md-none pb-3" />
 
-            <!-- Grid row -->
-            <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
 
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Home</a>
+              </li>
+              <li>
+                <a href="#!">Biographie</a>
+              </li>
+              <li>
+                <a href="#!">Filmographie</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
 
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
 
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
         </div>
-        <!-- Footer Links -->
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
 
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
     </footer>
     <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="funFacts.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+      <script src="funFacts.js"></script>
+  </body>
 </html>
+
