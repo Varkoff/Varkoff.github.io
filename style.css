@@ -1,52 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Alfa Slab One', cursive;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt&display=swap);
 .navbar {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1
 }
 
 section {
     width: 100%;
-    margin: 50px auto;
+    margin: 0 auto
 }
 
 section div {
-    /* background-color: #9d2503; */
-    color: #f1f1b0;
-}
-
-section {
-    width: 100%;
-    margin: 0 auto;
+    color: #f1f1b0
 }
 
 body {
-    background-color: #ffba49;
-}
-
-.hero-video {
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    overflow: hidden;
-    background-size: cover;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: none;
+    background-color: #ffba49
 }
 
 video {
@@ -55,77 +25,332 @@ video {
     z-index: -1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -0%);
+    transform: translate(-50%, 0);
     visibility: visible;
     opacity: 1;
     width: auto;
-    height: 1114px;
+    height: 1114px
 }
 
+#fact,
+.carousel-inner,
+p {
+    text-align: center
+}
 
-/* BIOGRAPHIE */
+.button-left,
+.button-right {
+    margin: 25px
+}
+
+#fact:hover {
+    cursor: pointer
+}
+
+a {
+    text-decoration: none
+}
+
+.container h4 {
+    margin: 30px auto;
+    color: #444;
+    width: 50px;
+    height: 100px
+}
+
+@media only screen and (max-width:1200px) {
+    .main-timeline .timeline-icon:before {
+        width: 50px;
+        right: -50px
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-icon:before {
+        right: auto;
+        left: -50px
+    }
+    .main-timeline .timeline-content {
+        margin-top: 75px
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main-timeline .timeline {
+        margin: 0 0 10px
+    }
+    .main-timeline .timeline-icon {
+        left: 25%
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-icon {
+        right: 25%
+    }
+    .main-timeline .timeline-content {
+        margin-top: 115px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main-timeline {
+        padding-top: 50px
+    }
+    .main-timeline:before {
+        left: 80px;
+        right: 0;
+        margin: 0
+    }
+    .main-timeline .timeline {
+        margin-bottom: 70px
+    }
+    .main-timeline .timeline:before {
+        top: 0;
+        left: 83px;
+        right: 0;
+        margin: 0
+    }
+    .main-timeline .timeline-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 40px;
+        padding: 5px;
+        top: 0;
+        left: 0
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-icon {
+        left: 0;
+        right: auto
+    }
+    .main-timeline .timeline-icon:before,
+    .main-timeline .timeline:nth-child(even) .timeline-icon:before {
+        width: 25px;
+        left: auto;
+        right: -25px
+    }
+    .main-timeline .timeline-icon:after,
+    .main-timeline .timeline:nth-child(even) .timeline-icon:after {
+        width: 25px;
+        height: 30px;
+        top: 44px;
+        left: auto;
+        right: -5px
+    }
+    .main-timeline .timeline-icon i {
+        font-size: 30px;
+        line-height: 45px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content {
+        width: 100%;
+        margin-top: -15px;
+        padding-left: 130px;
+        padding-right: 5px
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-content {
+        float: right
+    }
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(even) .timeline-content:before {
+        width: 50%;
+        left: 120px
+    }
+    .main-timeline .timeline:nth-child(even) .timeline-content:before {
+        right: auto;
+        transform: rotateY(0)
+    }
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline:nth-child(even) .timeline-content:after {
+        left: 85px
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding-left: 110px
+    }
+    .main-timeline .timeline-content:before,
+    .main-timeline .timeline:nth-child(2n) .timeline-content:before {
+        left: 99px
+    }
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline:nth-child(2n) .timeline-content:after {
+        left: 65px
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .main-timeline4 .year {
+        top: 50%;
+        transform: translateY(-50%)
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .main-timeline4 .timeline {
+        padding-left: 75px
+    }
+    .main-timeline4 .timeline:nth-child(2n) {
+        padding: 0 75px 0 0
+    }
+    .main-timeline4 .timeline-content {
+        padding-left: 130px
+    }
+    .main-timeline4 .timeline:nth-child(2n) .timeline-content {
+        padding: 0 130px 0 0
+    }
+    .main-timeline4 .timeline-content:before {
+        width: 68px;
+        left: -68px
+    }
+    .main-timeline4 .timeline:nth-child(2n) .timeline-content:before {
+        right: -68px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .main-timeline4 {
+        overflow: visible
+    }
+    .main-timeline4:before {
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(0)
+    }
+    .main-timeline4 .timeline:before,
+    .main-timeline4 .timeline:nth-child(2n):before {
+        top: 60px;
+        left: -9px;
+        transform: translateX(0)
+    }
+    .main-timeline4 .timeline,
+    .main-timeline4 .timeline:nth-child(even),
+    .main-timeline4 .timeline:nth-child(odd) {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 10px
+    }
+    .main-timeline4 .timeline-content,
+    .main-timeline4 .timeline:nth-child(2n) .timeline-content {
+        padding: 0
+    }
+    .main-timeline4 .timeline-content:before,
+    .main-timeline4 .timeline:nth-child(2n) .timeline-content:before {
+        display: none
+    }
+    .main-timeline4 .timeline:nth-child(2n) .year,
+    .main-timeline4 .year {
+        position: relative;
+        transform: translateY(0)
+    }
+    .main-timeline4 .timeline:nth-child(2n) .year:before,
+    .main-timeline4 .year:before {
+        border: 0;
+        border-right: 20px solid #f1f1b0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        top: 50%;
+        left: -23px;
+        bottom: auto;
+        right: auto;
+        transform: rotate(0)
+    }
+    .main-timeline4 .timeline:nth-child(2n) .year:before,
+    .main-timeline4 .timeline:nth-child(3n) .year:before,
+    .main-timeline4 .timeline:nth-child(4n) .year:before {
+        border-right-color: #f1f1b0
+    }
+    .main-timeline4 .inner-content {
+        padding: 10px
+    }
+}
+
+#contact-form label {
+    color: #000
+}
+
+#contact-form input[type=submit] {
+    margin: 40px auto 0;
+    display: block
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Alfa Slab One', cursive
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none
+}
 
 .carousel-inner {
-    border: 5px solid black;
+    border: 5px solid #000;
     border-radius: 20px;
-    background-color: #9D2503;
-    color: #f1f1b0;
+    background-color: #9d2503;
+    color: #f1f1b0
 }
 
 .carousel-control-next {
     right: -91px;
-    left: auto;
+    left: auto
 }
 
 .carouselExampleIndicators {
-    color: #9D2503;
+    color: #9d2503
 }
 
 .carousel-control-prev {
     left: -91px;
-    right: auto;
+    right: auto
 }
 
 .carousel-indicators {
-    bottom: -42px;
-}
-
-.carousel-inner,
-p {
-    text-align: center;
+    bottom: -42px
 }
 
 .img1 {
-    float: left;
+    float: left
 }
 
 .img2 {
-    float: right;
+    float: right
 }
 
 .img3 {
-    float: left;
+    float: left
 }
 
-.buttonleft {
-    color: #9D2503;
+.buttonleft,
+.buttonright {
+    color: #9d2503;
     font-size: 40px;
-    font-weight: bold;
-    text-align: left;
+    font-weight: 700;
+    text-align: left
 }
 
 .buttonright {
-    color: #9D2503;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: right;
+    text-align: right
 }
 
 .container-bio {
     display: flex;
     width: 100%;
     min-height: auto;
-    background: #FFBA49;
+    background: #ffba49
 }
 
 .button-left,
@@ -135,21 +360,16 @@ p {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 25px;
+    justify-content: center
 }
 
 .caroussel {
     width: calc(100% - 100px);
-    background: red;
+    background: red
 }
 
-
-/* interline */
-
 .interline {
-    border: 3px solid black;
-    /* FUN */
+    border: 3px solid #000
 }
 
 #fact {
@@ -158,18 +378,17 @@ p {
     height: 50px;
     user-select: none;
     font-size: 1.4rem;
-    text-align: center;
     margin: 0 auto;
-    transition: all 0.25s ease;
+    transition: all .25s ease;
     overflow-wrap: break-word;
-    text-shadow: 2px 2px 4px black;
-    padding: 0px;
+    text-shadow: 2px 2px 4px #000;
+    padding: 0
 }
 
 #factContainer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     border-radius: 80px;
-    padding: 20px;
+    padding: 20px
 }
 
 #factContainerContainer {
@@ -180,38 +399,18 @@ p {
     background-attachment: fixed;
     max-width: 70%;
     border-radius: 80px;
-    padding: 0px;
+    padding: 0;
     margin: 0 auto;
-    transition: all 0.25s ease;
+    transition: all .25s ease
 }
-
-#fact:hover {
-    cursor: pointer;
-}
-
-
-/* FIN FUN */
-
-
-/* FILMOGRAPHIE */
 
 h2 {
     text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container h4 {
-    margin: 30px auto;
-    color: #444;
-    width: 50px;
-    height: 100px;
+    margin-top: 30px
 }
 
 .main-timeline {
-    position: relative;
+    position: relative
 }
 
 .main-timeline:before {
@@ -224,13 +423,13 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0
 }
 
 .main-timeline .timeline {
     display: inline-block;
     margin-bottom: 50px;
-    position: relative;
+    position: relative
 }
 
 .main-timeline .timeline:before {
@@ -244,7 +443,7 @@ a {
     top: 50%;
     left: 50%;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
 }
 
 .main-timeline .timeline-icon {
@@ -258,7 +457,7 @@ a {
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .main-timeline .timeline-icon i {
@@ -269,19 +468,22 @@ a {
     color: #fff;
     line-height: 100px;
     z-index: 1;
-    position: relative;
+    position: relative
 }
 
 .main-timeline .timeline-icon:after,
 .main-timeline .timeline-icon:before {
     content: "";
-    width: 100px;
-    height: 4px;
     background: #f1f1b0;
     position: absolute;
+    transform: translateY(-50%)
+}
+
+.main-timeline .timeline-icon:before {
+    width: 100px;
+    height: 4px;
     top: 50%;
-    right: -100px;
-    transform: translateY(-50%);
+    right: -100px
 }
 
 .main-timeline .timeline-icon:after {
@@ -289,7 +491,7 @@ a {
     height: 50px;
     background: #fff;
     top: 89px;
-    right: -30px;
+    right: -30px
 }
 
 .main-timeline .timeline-content {
@@ -297,7 +499,7 @@ a {
     padding: 0 50px;
     margin: 52px 0 0;
     float: right;
-    position: relative;
+    position: relative
 }
 
 .main-timeline .timeline-content:before {
@@ -309,7 +511,7 @@ a {
     border-right: none;
     position: absolute;
     bottom: -13px;
-    left: 35px;
+    left: 35px
 }
 
 .main-timeline .timeline-content:after {
@@ -319,7 +521,7 @@ a {
     background: #f1f1b0;
     position: absolute;
     top: 13px;
-    left: 0;
+    left: 0
 }
 
 .main-timeline .title {
@@ -327,7 +529,7 @@ a {
     font-weight: 600;
     color: #f1f1b0;
     text-transform: uppercase;
-    margin: 0 0 5px;
+    margin: 0 0 5px
 }
 
 .main-timeline .description {
@@ -336,145 +538,145 @@ a {
     color: #404040;
     line-height: 20px;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 0
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-icon {
     left: auto;
-    right: 30%;
+    right: 30%
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-icon:before {
     right: auto;
-    left: -100px;
+    left: -100px
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-icon:after {
     right: auto;
-    left: -30px;
+    left: -30px
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-content {
-    float: left;
+    float: left
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-content:before {
     left: auto;
     right: 35px;
-    transform: rotateY(180deg);
+    transform: rotateY(180deg)
 }
 
 .main-timeline .timeline:nth-child(even) .timeline-content:after {
     left: auto;
-    right: 0;
+    right: 0
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-content:after,
 .main-timeline .timeline:nth-child(2n) .timeline-icon i,
 .main-timeline .timeline:nth-child(2n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(2n):before {
-    background: #f1f1b0;
+    background: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-icon {
-    border-color: #f1f1b0;
+    border-color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(2n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-content:before {
     border-left-color: #f1f1b0;
-    border-bottom-color: #f1f1b0;
+    border-bottom-color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(3n) .timeline-content:after,
 .main-timeline .timeline:nth-child(3n) .timeline-icon i,
 .main-timeline .timeline:nth-child(3n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(3n):before {
-    background: #f1f1b0;
+    background: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(3n) .timeline-icon {
-    border-color: #f1f1b0;
+    border-color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(3n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(3n) .timeline-content:before {
     border-left-color: #f1f1b0;
-    border-bottom-color: #f1f1b0;
+    border-bottom-color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(4n) .timeline-content:after,
 .main-timeline .timeline:nth-child(4n) .timeline-icon i,
 .main-timeline .timeline:nth-child(4n) .timeline-icon:before,
 .main-timeline .timeline:nth-child(4n):before {
-    background: #f1f1b0;
+    background: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(4n) .timeline-icon {
-    border-color: #f1f1b0;
+    border-color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(4n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline .timeline:nth-child(4n) .timeline-content:before {
     border-left-color: #f1f1b0;
-    border-bottom-color: #f1f1b0;
+    border-bottom-color: #f1f1b0
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
     .main-timeline .timeline-icon:before {
         width: 50px;
-        right: -50px;
+        right: -50px
     }
     .main-timeline .timeline:nth-child(even) .timeline-icon:before {
         right: auto;
-        left: -50px;
+        left: -50px
     }
     .main-timeline .timeline-content {
-        margin-top: 75px;
+        margin-top: 75px
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width:992px) {
     .main-timeline .timeline {
-        margin: 0 0 10px;
+        margin: 0 0 10px
     }
     .main-timeline .timeline-icon {
-        left: 25%;
+        left: 25%
     }
     .main-timeline .timeline:nth-child(even) .timeline-icon {
-        right: 25%;
+        right: 25%
     }
     .main-timeline .timeline-content {
-        margin-top: 115px;
+        margin-top: 115px
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px) {
     .main-timeline {
-        padding-top: 50px;
+        padding-top: 50px
     }
     .main-timeline:before {
         left: 80px;
         right: 0;
-        margin: 0;
+        margin: 0
     }
     .main-timeline .timeline {
-        margin-bottom: 70px;
+        margin-bottom: 70px
     }
     .main-timeline .timeline:before {
         top: 0;
         left: 83px;
         right: 0;
-        margin: 0;
+        margin: 0
     }
     .main-timeline .timeline-icon {
         width: 60px;
@@ -482,17 +684,17 @@ a {
         line-height: 40px;
         padding: 5px;
         top: 0;
-        left: 0;
+        left: 0
     }
     .main-timeline .timeline:nth-child(even) .timeline-icon {
         left: 0;
-        right: auto;
+        right: auto
     }
     .main-timeline .timeline-icon:before,
     .main-timeline .timeline:nth-child(even) .timeline-icon:before {
         width: 25px;
         left: auto;
-        right: -25px;
+        right: -25px
     }
     .main-timeline .timeline-icon:after,
     .main-timeline .timeline:nth-child(even) .timeline-icon:after {
@@ -500,59 +702,56 @@ a {
         height: 30px;
         top: 44px;
         left: auto;
-        right: -5px;
+        right: -5px
     }
     .main-timeline .timeline-icon i {
         font-size: 30px;
-        line-height: 45px;
+        line-height: 45px
     }
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(even) .timeline-content {
         width: 100%;
         margin-top: -15px;
         padding-left: 130px;
-        padding-right: 5px;
+        padding-right: 5px
     }
     .main-timeline .timeline:nth-child(even) .timeline-content {
-        float: right;
+        float: right
     }
     .main-timeline .timeline-content:before,
     .main-timeline .timeline:nth-child(even) .timeline-content:before {
         width: 50%;
-        left: 120px;
+        left: 120px
     }
     .main-timeline .timeline:nth-child(even) .timeline-content:before {
         right: auto;
-        transform: rotateY(0);
+        transform: rotateY(0)
     }
     .main-timeline .timeline-content:after,
     .main-timeline .timeline:nth-child(even) .timeline-content:after {
-        left: 85px;
+        left: 85px
     }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width:479px) {
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(2n) .timeline-content {
-        padding-left: 110px;
+        padding-left: 110px
     }
     .main-timeline .timeline-content:before,
     .main-timeline .timeline:nth-child(2n) .timeline-content:before {
-        left: 99px;
+        left: 99px
     }
     .main-timeline .timeline-content:after,
     .main-timeline .timeline:nth-child(2n) .timeline-content:after {
-        left: 65px;
+        left: 65px
     }
 }
-
-
-/******************* Timeline *****************/
 
 .main-timeline4 {
     overflow: hidden;
     position: relative;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 .main-timeline4:before {
@@ -563,21 +762,21 @@ a {
     position: absolute;
     top: 147px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .main-timeline4 .timeline-content:before,
 .main-timeline4 .timeline:before {
     top: 50%;
     transform: translateY(-50%);
-    content: "";
+    content: ""
 }
 
 .main-timeline4 .timeline {
     width: 50%;
     padding-left: 100px;
     float: right;
-    position: relative;
+    position: relative
 }
 
 .main-timeline4 .timeline:before {
@@ -587,13 +786,13 @@ a {
     background: #fff;
     border: 5px solid #333;
     position: absolute;
-    left: -10px;
+    left: -10px
 }
 
 .main-timeline4 .timeline-content {
     display: block;
     padding-left: 150px;
-    position: relative;
+    position: relative
 }
 
 .main-timeline4 .timeline-content:before {
@@ -601,7 +800,7 @@ a {
     height: 10px;
     border-top: 7px dotted #333;
     position: absolute;
-    left: -92px;
+    left: -92px
 }
 
 .main-timeline4 .year {
@@ -614,10 +813,10 @@ a {
     font-size: 30px;
     color: #f1f1b0;
     text-align: center;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .4);
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 0
 }
 
 .main-timeline4 .year:before {
@@ -628,11 +827,11 @@ a {
     position: absolute;
     bottom: -13px;
     right: 0;
-    transform: rotate(45deg);
+    transform: rotate(45deg)
 }
 
 .main-timeline4 .inner-content {
-    padding: 20px 0;
+    padding: 20px 0
 }
 
 .main-timeline4 .title {
@@ -640,36 +839,39 @@ a {
     font-weight: 600;
     color: #f1f1b0;
     text-transform: uppercase;
-    margin: 0 0 5px;
+    margin: 0 0 5px
 }
 
 .main-timeline4 .description {
     font-size: 17px;
     color: #6f6f6f;
-    margin: 0 0 5px;
+    margin: 0 0 5px
 }
 
 .main-timeline4 .timeline:nth-child(2n) {
-    padding: 0 100px 0 0;
+    padding: 0 100px 0 0
 }
 
 .main-timeline4 .timeline:nth-child(2n) .timeline-content:before,
-.main-timeline4 .timeline:nth-child(2n) .year,
+.main-timeline4 .timeline:nth-child(2n) .year {
+    left: auto
+}
+
 .main-timeline4 .timeline:nth-child(2n):before {
     left: auto;
-    right: -10px;
+    right: -10px
 }
 
 .main-timeline4 .timeline:nth-child(2n) .timeline-content {
-    padding: 0 150px 0 0;
+    padding: 0 150px 0 0
 }
 
 .main-timeline4 .timeline:nth-child(2n) .timeline-content:before {
-    right: -92px;
+    right: -92px
 }
 
 .main-timeline4 .timeline:nth-child(2n) .year {
-    right: 0;
+    right: 0
 }
 
 .main-timeline4 .timeline:nth-child(2n) .year:before {
@@ -677,109 +879,109 @@ a {
     left: 0;
     border-left: none;
     border-right: 20px solid #f1f1b0;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg)
 }
 
 .main-timeline4 .timeline:nth-child(2) {
-    margin-top: 110px;
+    margin-top: 110px
 }
 
 .main-timeline4 .timeline:nth-child(odd) {
-    margin: -110px 0 0;
+    margin: -110px 0 0
 }
 
 .main-timeline4 .timeline:nth-child(even) {
-    margin-bottom: 80px;
+    margin-bottom: 80px
 }
 
 .main-timeline4 .timeline:first-child,
 .main-timeline4 .timeline:last-child:nth-child(even) {
-    margin: 0;
+    margin: 0
 }
 
 .main-timeline4 .timeline:nth-child(2n) .year {
     border-color: #f1f1b0;
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(2) .year:before {
-    border-right-color: #f1f1b0;
+    border-right-color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(2n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(3n) .year {
     border-color: #f1f1b0;
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(3) .year:before {
-    border-left-color: #f1f1b0;
+    border-left-color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(3n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(4n) .year {
     border-color: #f1f1b0;
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(4) .year:before {
-    border-right-color: #f1f1b0;
+    border-right-color: #f1f1b0
 }
 
 .main-timeline4 .timeline:nth-child(4n) .title {
-    color: #f1f1b0;
+    color: #f1f1b0
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1200px) {
     .main-timeline4 .year {
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%)
     }
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width:990px) {
     .main-timeline4 .timeline {
-        padding-left: 75px;
+        padding-left: 75px
     }
     .main-timeline4 .timeline:nth-child(2n) {
-        padding: 0 75px 0 0;
+        padding: 0 75px 0 0
     }
     .main-timeline4 .timeline-content {
-        padding-left: 130px;
+        padding-left: 130px
     }
     .main-timeline4 .timeline:nth-child(2n) .timeline-content {
-        padding: 0 130px 0 0;
+        padding: 0 130px 0 0
     }
     .main-timeline4 .timeline-content:before {
         width: 68px;
-        left: -68px;
+        left: -68px
     }
     .main-timeline4 .timeline:nth-child(2n) .timeline-content:before {
-        right: -68px;
+        right: -68px
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width:767px) {
     .main-timeline4 {
-        overflow: visible;
+        overflow: visible
     }
     .main-timeline4:before {
         height: 100%;
         top: 0;
         left: 0;
-        transform: translateX(0);
+        transform: translateX(0)
     }
     .main-timeline4 .timeline:before,
     .main-timeline4 .timeline:nth-child(2n):before {
         top: 60px;
         left: -9px;
-        transform: translateX(0);
+        transform: translateX(0)
     }
     .main-timeline4 .timeline,
     .main-timeline4 .timeline:nth-child(even),
@@ -788,24 +990,24 @@ a {
         float: none;
         text-align: center;
         padding: 0;
-        margin: 0 0 10px;
+        margin: 0 0 10px
     }
     .main-timeline4 .timeline-content,
     .main-timeline4 .timeline:nth-child(2n) .timeline-content {
-        padding: 0;
+        padding: 0
     }
     .main-timeline4 .timeline-content:before,
     .main-timeline4 .timeline:nth-child(2n) .timeline-content:before {
-        display: none;
+        display: none
     }
     .main-timeline4 .timeline:nth-child(2n) .year,
     .main-timeline4 .year {
         position: relative;
-        transform: translateY(0);
+        transform: translateY(0)
     }
     .main-timeline4 .timeline:nth-child(2n) .year:before,
     .main-timeline4 .year:before {
-        border: none;
+        border: 0;
         border-right: 20px solid #f1f1b0;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
@@ -813,71 +1015,51 @@ a {
         left: -23px;
         bottom: auto;
         right: auto;
-        transform: rotate(0);
+        transform: rotate(0)
     }
-    .main-timeline4 .timeline:nth-child(2n) .year:before {
-        border-right-color: #f1f1b0;
-    }
-    .main-timeline4 .timeline:nth-child(3n) .year:before {
-        border-right-color: #f1f1b0;
-    }
+    .main-timeline4 .timeline:nth-child(2n) .year:before,
+    .main-timeline4 .timeline:nth-child(3n) .year:before,
     .main-timeline4 .timeline:nth-child(4n) .year:before {
-        border-right-color: #f1f1b0;
+        border-right-color: #f1f1b0
     }
     .main-timeline4 .inner-content {
-        padding: 10px;
+        padding: 10px
     }
 }
-
-
-/*************** FORMULAIRE *********************/
 
 .divider {
     width: 500px;
     height: 2px;
     background: green;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .heading {
     text-align: center;
-    margin-bottom: 60px;
-}
-
-#contact-form label {
-    color: black;
-}
-
-h2 {
-    margin-top: 30px;
+    margin-bottom: 60px
 }
 
 #contact-form {
     font-size: 20px;
     background: #ffba49;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .blue {
-    color: #0069d6;
+    color: #0069d6
 }
 
+.comments,
 .form-control {
     height: 50px;
-    font-size: 18px;
+    font-size: 18px
 }
 
 .comments {
     font-style: italic;
-    font-size: 18px;
     color: #d82c2e;
-    height: 25px;
-}
-
-#contact-form input[type="submit"] {
-    margin: 40px auto 0px;
-    display: block;
+    height: 25px
 }
 
 .button1 {
@@ -885,22 +1067,22 @@ h2 {
     background: #9d2503;
     color: #fff;
     width: 100%;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 18px;
     border-radius: 5px;
-    transition: all 0.3s ease-in 0.1s;
+    transition: all .3s ease-in .1s
 }
 
 .button1:hover {
     background: #333;
-    border-color: #9d2503;
+    border-color: #9d2503
 }
 
 .thank-you {
     text-align: center;
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 22px;
-    color: black;
+    color: #000
 }
