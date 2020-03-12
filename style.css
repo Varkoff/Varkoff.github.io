@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
-h1,
-h3,
-h4,
-h2 {
-  font-family: "Alfa Slab One", cursive;
-}
-
-section {
-  width: 100%;
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+h1, h2, h3, h4 {
+    font-family: 'Alfa Slab One', cursive;
 }
 
 section div {
   /* background-color: #9d2503; */
   color: #f1f1b0;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
 }
 
 body {
@@ -50,6 +48,134 @@ video {
   height: 1114px;
 }
 
+/* BIOGRAPHIE */
+
+
+.carousel-inner {
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: #9D2503;
+    color: #f1f1b0;
+}
+
+
+
+.carousel-control-next {
+    right: -91px;
+    left: auto;
+
+}
+
+.carouselExampleIndicators {
+    color: #9D2503;
+}
+
+.carousel-control-prev {
+    left: -91px;
+    right: auto;
+}
+
+.carousel-indicators {
+    bottom: -42px;
+}
+
+.img1 {
+    float: left; 
+}
+
+.img2 {
+    float: right; 
+}
+
+.img3 {
+    float: left; 
+}
+
+.buttonleft {
+    color:#9D2503;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.buttonright {
+    color:#9D2503;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    
+}
+
+.container-bio {
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    background: #FFBA49;
+}
+
+.button-left, .button-right{
+    width: 50px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caroussel{
+    width: calc(100% - 100px);
+    background: red;
+  }
+
+
+/* interline */
+
+.interline {
+    border: 3px solid black;
+
+/* FUN */
+
+#fact {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 500;
+    height: 50px;
+    user-select: none;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+    overflow-wrap: break-word;
+    text-shadow: 2px 2px 4px black;
+    padding: 0px;
+}
+
+#factContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 80px;
+    padding: 20px;
+}
+
+#factContainerContainer {
+    background-image: url(https://i.imgur.com/PAxoiA0.jpg?1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 70%;
+    border-radius: 80px;
+    padding: 0px;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+}
+
+#fact:hover {
+    cursor: pointer;
+}
+
+
+/* FIN FUN */
+  
 /* FILMOGRAPHIE */
 h2 {
   text-align: center;
