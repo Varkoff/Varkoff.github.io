@@ -465,14 +465,14 @@
         height: 70%;
         background: #333;
         position: absolute;
-        top: 147px;
+        top: 177px;
         left: 50%;
         transform: translateX(-50%)
     }
     
     .main-timeline4 .timeline-content:before,
     .main-timeline4 .timeline:before {
-        top: 50%;
+        top: 47%;
         transform: translateY(-50%);
         content: ""
     }
@@ -520,7 +520,7 @@
         text-align: center;
         box-shadow: inset 0 0 10px rgba(0, 0, 0, .4);
         position: absolute;
-        top: 30px;
+        top: 75px;
         left: 0
     }
     

@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+
+
+
 
 
     <title>Hello, world!</title>
@@ -21,7 +26,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#Home">Home</a>
+        <a class="navbar-brand" href="#home">Accueil</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,8 +51,8 @@
         </div>
     </nav>
 
-    <section id="home">
-        <section>
+    <section>
+        <section id="home">
             <div class="hero-video">
                 <video autoplay="" muted="">
             <source src="chucknorris.mp4" type="video/mp4">
@@ -78,19 +83,19 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="images/chuck.gif" class="img1" alt="youngchuck">
-                                <p>Mon domaine de prédilection ? LA BAGARRE !!!! Après un bref passage dans l'US Force ou j'y ai appris le karaté, j'ai ouvert mon école d'art martial. Champion du monde de ma categorie de 1968 à 1974, j'ai attiré l'attention
-                                    d'un certain Bruce Lee. C'est en échangeant quelques doubles coups de pieds retournés avec ce dernier que ma carrière à débutée au cinéma.</p>
+                                <p>Mon domaine de prédilection ? LA BAGARRE !!!! Après un bref passage dans l'US Force ou j'y ai appris le karaté, j'ai ouvert mon école d'arts martiaux. Champion du monde de ma catégorie de 1968 à 1974, j'ai attiré l'attention
+                                    d'un certain Bruce Lee. C'est en échangeant quelques doubles coups de pieds retournés avec ce dernier que ma carrière a débuté au cinéma.</p>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/tenor.gif" class="img2" alt="texasranger">
-                                <p>Du haut de mes 80 années terrestre, j'ai excercé différents types de métiers comme celui d'acteur, cascadeur, scenariste et Texas Ranger. J'ai même prété ma voix à la bande son de la serie dont je reste à jamais le héro.
+                                <p>Du haut de mes 80 années terrestre, j'ai excercé différents types de métiers comme celui d'acteur, cascadeur, scénariste et Texas Ranger. J'ai même prété ma voix à la bande son de la série dont je reste à jamais le héros.
                                 </p>
                             </div>
                             <div class="carousel-item">
                                 <img src="images/giphy.gif" class="img3" alt="gifchuck">
-                                <p>C'est après avoir largement conquis la Terre en devenant une icone absolue du meme sur le web que je compte désormais me lancer dans la conquete d'autres planètes. Je reste donc ouvert à toute proposition dans l'univers
-                                    : gardien de la galaxy, roi d'Asgard ou plus simplement Dieu.</p>
-                                <p>Ps: Merci aux Avengers de ne plus me contacter, ma réponse est toujours non.</p>
+                                <p>C'est après avoir largement conquis la Terre en devenant une icône absolue du meme sur le web que je compte désormais me lancer dans la conquête d'autres planètes. Je reste donc ouvert à toute proposition dans l'univers
+                                    : gardien de la galaxie, roi d'Asgard ou plus simplement Dieu.</p>
+                                <p>P.S: Merci aux Avengers de ne plus me contacter, ma réponse est toujours non.</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +186,8 @@
         </div>
     </section>
     <section id="fun">
-        <h2>Fun!</h2>
+        <h2>Fun ! ( <i class="fas fa-mouse-pointer"> Cliquez !</i>)
+        </h2>
         <div id="factContainerContainer">
             <div id="factContainer">
                 <p id="fact" onclick="changeFact();" onload="changeFact();">Quand Google ne trouve pas quelque chose, il demande à Chuck Norris. </p>
