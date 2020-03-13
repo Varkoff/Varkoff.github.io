@@ -10,13 +10,13 @@ function changeFact() {
         count = 0;
     }
     fact.style.opacity = 0;
-    fact.style.height = "40px";
+    /* fact.style.height = "40px"; */
 
     setTimeout(() => {
-        fact.style.height = "40px";
+        /* fact.style.height = "40px"; */
         fact.innerHTML = quotes[count];
-        var heightOfP = (fact.scrollHeight) + "px";
-        fact.style.height = heightOfP;
+        /* var heightOfP = (fact.scrollHeight) + "px";
+        fact.style.height = heightOfP; */
         fact.style.opacity = 1;
     }, 500);
 }
